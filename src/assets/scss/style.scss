@@ -1,0 +1,254 @@
+/*!
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+@import 'root';
+@import 'reboot';
+@import 'type';
+@import 'images';
+@import 'code';
+@import 'grid';
+@import 'tables';
+@import 'forms';
+@import 'buttons';
+@import 'transitions';
+@import 'dropdown';
+@import 'button-group';
+@import 'input-group';
+@import 'custom-forms';
+@import 'nav';
+@import 'navbar';
+@import 'card';
+@import 'breadcrumb';
+@import 'pagination';
+@import 'badge';
+@import 'jumbotron';
+@import 'alert';
+@import 'progress';
+@import 'media';
+@import 'list-group';
+@import 'close';
+@import 'toasts';
+@import 'modal';
+@import 'tooltip';
+@import 'popover';
+@import 'carousel';
+@import 'spinners';
+@import 'utilities';
+@import 'print';
+@import 'vendor/rfs';
+
+$dark1: #06111e;
+$dark2: #121d29;
+$dark3: #3c465e;
+
+.brand-text-icon {
+  @include font-size(1.6rem);
+  color: $orange;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+
+  span {
+    @include font-size(1.5rem);
+    color: $white;
+  }
+}
+
+body {
+  background-color: $dark1 !important;
+}
+
+section {
+  &.light {
+    background-color: $white !important;
+
+  }
+}
+
+.carousel .imageWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 30%;
+}
+
+.img-hero {
+  @media only screen and (max-width: 480px) {
+    max-height: 710px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-height: 690px;
+  }
+
+  @media only screen and (min-width: 1025px) {
+    max-height: 660px;
+  }
+}
+
+.hero {
+  top: 4.5rem;
+
+  @media only screen and (min-width: 480px) {
+    top: 6rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    top: 8rem;
+  }
+
+  @media only screen and (min-width: 1025px) {
+    top: 9rem;
+  }
+
+  i {
+    @include font-size(1.5rem);
+    color: $orange;
+    margin-right: 0.8rem;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    @include font-size(1.5rem);
+    color: $white;
+
+    &.location {
+      @include font-size(1.2rem);
+
+      @media only screen and (min-width: 768px) {
+        @include rfs(1.5rem);
+
+      }
+
+      @media only screen and (min-width: 1025px) {
+        @include rfs(1.8rem);
+
+      }
+
+      color: $white;
+    }
+  }
+
+  h2 {
+    @include rfs(2.5rem);
+    color: $white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+    @media only screen and (min-width: 768px) {
+      @include rfs(3rem);
+
+    }
+
+    @media only screen and (min-width: 1025px) {
+      @include rfs(3.5rem);
+
+    }
+
+    span {
+      color: $orange;
+    }
+  }
+}
+
+.button-container {
+  background-color: $orange;
+  color: $white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  @include font-size(0.8rem);
+}
+
+.card-large {
+  &.light {
+    .card {
+      background-color: $white !important;
+
+      h5 {
+        color: $dark1;
+      }
+
+      p {
+        color: $dark1;
+      }
+    }
+
+  }
+
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: $orange;
+    @include font-size(1.5rem);
+  }
+
+  .card {
+    background-color: $dark1 !important;
+    border: none;
+
+    img {
+      width: 20rem !important;
+    }
+
+    h5 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: $white;
+      @include font-size(2rem);
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      color: $gray-200;
+      @include font-size(1rem);
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.organization {
+  background-color: $dark2 !important;
+
+  .organization-item {
+    img {
+      @media only screen and (min-width: 480px) {
+        max-width: 6rem;
+      }
+
+      @media only screen and (min-width: 768px) {
+        max-width: 7rem;
+      }
+
+      @media only screen and (min-width: 1025px) {
+        max-width: 8rem;
+      }
+    }
+
+    h5 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: $white;
+      @include font-size(1rem);
+      margin-top: 1rem;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      @include font-size(0.8rem);
+      color: $gray-300
+    }
+  }
+}

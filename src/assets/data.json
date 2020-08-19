@@ -1,0 +1,64 @@
+{
+  "carousel": {
+    "message": "success",
+    "code": 200,
+    "data": [
+      {
+        "title": "Ini Adalah Contoh Title Carousel Ke-1",
+        "subTitle": "Ini Adalah Subtitle Ke-1",
+        "imageUrl": "./image.jpg"
+      },
+      {
+        "title": "Ini Adalah Contoh Title Carousel Ke-2",
+        "subTitle": "Ini Adalah Subtitle Ke-2",
+        "imageUrl": "./image.jpg"
+      },
+      {
+        "title": "Ini Adalah Contoh Title Carousel Ke-3",
+        "subTitle": "Ini Adalah Subtitle Ke-3",
+        "imageUrl": "./image.jpg"
+      }
+    ]
+  },
+  "organization": {
+    "message": "success",
+    "code": 200,
+    "data": [
+      {
+        "name": "AKP Aries Eko",
+        "position": "Ketua Harian",
+        "ImageUrl": "./organization.png"
+      },
+      {
+        "name": "AKP Aries Eko",
+        "position": "Ketua Harian",
+        "ImageUrl": "./organization.png"
+      },
+      {
+        "name": "AKP Aries Eko",
+        "position": "Ketua Harian",
+        "ImageUrl": "./organization.png"
+      },
+      {
+        "name": "AKP Aries Eko",
+        "position": "Ketua Harian",
+        "ImageUrl": "./organization.png"
+      },
+      {
+        "name": "AKP Aries Eko",
+        "position": "Ketua Harian",
+        "ImageUrl": "./organization.png"
+      },
+      {
+        "name": "AKP Aries Eko",
+        "position": "Ketua Harian",
+        "ImageUrl": "./organization.png"
+      },
+      {
+        "name": "AKP Aries Eko",
+        "position": "Ketua Harian",
+        "ImageUrl": "./organization.png"
+      }
+    ]
+  }
+}
