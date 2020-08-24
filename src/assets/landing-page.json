@@ -400,7 +400,7 @@
             "url": "./image.jpg"
           },
           {
-            "id": 2,
+            "id": 1,
             "url": "./image.jpg"
           }
         ],
@@ -410,14 +410,14 @@
         "location": "Jakarta"
       },
       {
-        "id": 2,
+        "id": 1,
         "imageUrl": [
           {
             "id": 1,
             "url": "./image.jpg"
           },
           {
-            "id": 2,
+            "id": 1,
             "url": "./image.jpg"
           }
         ],
@@ -441,7 +441,7 @@
             "url": "./image.jpg"
           },
           {
-            "id": 2,
+            "id": 1,
             "url": "./image.jpg"
           }
         ],
@@ -451,14 +451,14 @@
         "location": "Jakarta"
       },
       {
-        "id": 2,
+        "id": 1,
         "imageUrl": [
           {
             "id": 1,
             "url": "./image.jpg"
           },
           {
-            "id": 2,
+            "id": 1,
             "url": "./image.jpg"
           }
         ],

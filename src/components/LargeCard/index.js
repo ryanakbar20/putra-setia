@@ -1,60 +1,45 @@
 import React from 'react';
 import Button from '../Button';
 
-export default function LargeCard({ theme }) {
-  switch (theme) {
-    case 'dark':
-      return (
-        <div className="container pt-5 pb-5 card-large">
-          <h4>Sejarah</h4>
-          <div className="card mt-4">
-            <div className="row">
-              <div className="col-5">
-                <img src="./image.jpg" className="img-fluid" width="20px" />
-              </div>
-              <div className="col-7">
-                <div className="text-left">
-                  <h5>Sejarah Perkembangan Pencak Silat Putra Setia</h5>
-                  <p>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content. Some quick example text
-                    to build on the card title and make up the bulk of the
-                    card's content.
-                  </p>
-                  <Button value="SELANJUTNYA" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      );
-
-    default:
-      return (
-        <section className="light">
-          <div className="container pt-5 pb-5 card-large light">
-            <h4>Sejarah</h4>
-            <div className="card mt-4">
-              <div className="row">
-                <div className="col-5">
-                  <img src="./image.jpg" className="img-fluid" width="20px" />
-                </div>
-                <div className="col-7">
+export default function LargeCard({ theme, data }) {
+  // const [Mode, setMode] = useState()
+  const className = [];
+  if (theme === 'light') {
+    className.push('light');
+  }
+  return (
+    <section className={className.join(' ')}>
+      <div className="container pt-5 pb-5 card-large">
+        <h4>Tentang Kami</h4>
+        <div className="card mt-5">
+          {data.data.map((item, index) => {
+            return (
+              <div key={item.id} className="row justify-content-center">
+                <div className="col-11 d-md-none ">
                   <div className="text-left">
-                    <h5>Sejarah Perkembangan Pencak Silat Putra Setia</h5>
-                    <p>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content. Some quick example
-                      text to build on the card title and make up the bulk of
-                      the card's content.
-                    </p>
+                    <h5>{item.title}</h5>
+                  </div>
+                </div>
+                <div className="col-11 col-md-5">
+                  <img
+                    src={item.imageUrl}
+                    className="img-fluid my-3"
+                    width="20px"
+                    alt="gambar"
+                  />
+                </div>
+                <div className="col-11 col-md-7">
+                  <div className="text-left">
+                    <h5 className="d-none d-md-block">{item.title}</h5>
+                    <p>{item.content}</p>
                     <Button value="SELANJUTNYA" />
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-      );
-  }
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
 }

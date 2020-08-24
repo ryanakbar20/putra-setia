@@ -30,6 +30,7 @@
   font-weight: 500;
   background-color: #06111e !important;
 
+
   &.dark {
     color: $white !important;
     opacity: 90% !important;
@@ -38,6 +39,11 @@
   &.light {
     color: $white !important;
     opacity: 80% !important;
+  }
+
+  &.scrolled {
+    opacity: 100% !important;
+
   }
 
   &.btn {

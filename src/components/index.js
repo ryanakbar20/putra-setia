@@ -2,7 +2,9 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import Button from './Button';
 import LargeCard from './LargeCard';
-import { DarkTheme, LightTheme } from './Themes';
 import Organization from './Organization';
+import Table from './Table';
+import Galery from './Galery';
+import News from './News';
 
-export { Organization, Navbar, Hero, Button, LargeCard, DarkTheme, LightTheme };
+export { News, Organization, Navbar, Hero, Button, LargeCard, Table, Galery };
