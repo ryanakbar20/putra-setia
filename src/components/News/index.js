@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button';
 
 export default function News({ data, theme }) {
   const className = ['news-item', 'text-left'];
@@ -13,20 +14,22 @@ export default function News({ data, theme }) {
         <h4>{data.title}</h4>
         {data.data.map((item) => {
           return (
-            <div className={smallClass.join(' ')}>
-              <div className="col-11">
-                <h5>{item.title}</h5>
-              </div>
-              <div className="col-11 my-2">
-                <img
-                  src={item.imageUrl[0].url}
-                  alt="..."
-                  className="img-fluid"
-                />
-              </div>
-              <div className="col-11">
-                <p>{item.content}</p>
-                <small>{item.date}</small>
+            <div key={item.id} className="d-md-none">
+              <div className={smallClass.join(' ')}>
+                <div className="col-10">
+                  <h5>{item.title}</h5>
+                </div>
+                <div className="col-10 my-2">
+                  <img
+                    src={item.imageUrl[0].url}
+                    alt="..."
+                    className="img-fluid"
+                  />
+                </div>
+                <div className="col-10">
+                  <p>{item.content}</p>
+                  <small>{item.date}</small>
+                </div>
               </div>
             </div>
           );
@@ -65,6 +68,11 @@ export default function News({ data, theme }) {
             </div>
           );
         })}
+        <div className="row justify-content-center">
+          <div className="col">
+            <Button type={theme === 'dark' ? 'nextWhite' : 'nextBlack'} />
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -345,6 +345,10 @@ section.light {
   color: $white;
   @include font-size(1.5rem);
 
+  @media only screen and (max-width: 767px) {
+    @include font-size(1.1rem);
+  }
+
   &.black {
     color: $dark1;
   }
@@ -352,6 +356,10 @@ section.light {
   i {
     margin-left: 0.3rem;
     @include font-size(1.8rem);
+
+    @media only screen and (max-width: 767px) {
+      @include font-size(1.4rem);
+    }
   }
 }
 
